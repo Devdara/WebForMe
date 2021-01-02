@@ -17,7 +17,6 @@
 
 				<main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">일반 게시판</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
                             <li class="breadcrumb-item active">일반게시판</li>
@@ -69,7 +68,7 @@
 	                            
 	                            <ul class="pagination justify-content-center">
 								    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-								    <li class="page-item"><a class="page-link" href="#">1</a></li>
+								    <li class="page-item active"><a class="page-link" href="#">1</a></li>
 								    <li class="page-item"><a class="page-link" href="#">2</a></li>
 								    <li class="page-item"><a class="page-link" href="#">3</a></li>
 								    <li class="page-item"><a class="page-link" href="#">Next</a></li>

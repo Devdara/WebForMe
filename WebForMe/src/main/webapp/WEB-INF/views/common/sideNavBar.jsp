@@ -57,9 +57,13 @@
                              -->
                              
                             <div class="sb-sidenav-menu-heading">메뉴</div>
+                            <a class="nav-link" href="/board">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                일반게시판
+                            </a>
                             <a class="nav-link" href="/table">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                게시판
+                                JS게시판
                             </a>
                             <a class="nav-link" href="/chart">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>

@@ -16,7 +16,7 @@ public class BoardController extends BaseController {
 		
 		ModelAndView mav = new ModelAndView();
 		
-		mav.setViewName("/board/board");
+		mav.setViewName("/board/boardList");
 		
 		return mav;
 	}

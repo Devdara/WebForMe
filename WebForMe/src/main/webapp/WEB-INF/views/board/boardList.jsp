@@ -33,10 +33,10 @@
 	                            	<thead>
 	                            		<tr>
 	                            			<th width="10%">No</th>
-	                            			<th width="50%">제목</th>
+	                            			<th width="50%" class="text-center">제목</th>
 	                            			<th width="20%">작성자</th>
 	                            			<th width="10%">날짜</th>
-	                            			<th width="10%">조회수</th>
+	                            			<th width="10%" class="text-center">조회수</th>
 	                            		</tr>
 	                            	</thead>
 	                            	<tbody>

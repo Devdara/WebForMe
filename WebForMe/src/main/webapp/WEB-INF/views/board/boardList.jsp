@@ -32,11 +32,11 @@
 	                            <table class="table table-hover">
 	                            	<thead>
 	                            		<tr>
-	                            			<th width="10%">No</th>
-	                            			<th width="50%" class="text-center">제목</th>
-	                            			<th width="20%">작성자</th>
-	                            			<th width="10%">날짜</th>
-	                            			<th width="10%" class="text-center">조회수</th>
+	                            			<th>No</th>
+	                            			<th>제목</th>
+	                            			<th>작성자</th>
+	                            			<th>날짜</th>
+	                            			<th>조회수</th>
 	                            		</tr>
 	                            	</thead>
 	                            	<tbody>
@@ -45,21 +45,21 @@
 	                            			<td>테스트제목1</td>
 	                            			<td>테스터1</td>
 	                            			<td>2021.01.01</td>
-	                            			<td  class="text-center">0</td>
+	                            			<td>0</td>
 	                            		<tr>
 	                            		<tr>
 	                            			<td>2</td>
 	                            			<td>테스트제목2</td>
 	                            			<td>테스터2</td>
 	                            			<td>2021.01.02</td>
-	                            			<td  class="text-center">1</td>
+	                            			<td>1</td>
 	                            		<tr>
 	                            		<tr>
 	                            			<td>3</td>
 	                            			<td>테스트제목3</td>
 	                            			<td>테스터3</td>
 	                            			<td>2021.01.03</td>
-	                            			<td  class="text-center">3</td>
+	                            			<td>3</td>
 	                            		<tr>
 	                            	</tbody>
 	                            </table>

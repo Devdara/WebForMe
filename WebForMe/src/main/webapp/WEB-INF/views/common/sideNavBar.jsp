@@ -57,7 +57,11 @@
                              -->
                              
                             <div class="sb-sidenav-menu-heading">메뉴</div>
-                            <a class="nav-link" href="/board">
+                            <a class="nav-link" href="/user/list">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                회원 조회
+                            </a>
+                            <a class="nav-link" href="/board/list">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 일반게시판
                             </a>
@@ -72,8 +76,8 @@
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Admin
+                        <div class="small">Logged in as : Admin</div>                      
+						<div class="small">${serverTime}</div>
                     </div>
                 </nav>
             </div>

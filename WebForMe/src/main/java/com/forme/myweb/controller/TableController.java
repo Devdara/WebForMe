@@ -1,7 +1,5 @@
 package com.forme.myweb.controller;
 
-import java.text.DateFormat;
-import java.util.Date;
 import java.util.Locale;
 
 import org.springframework.stereotype.Controller;
@@ -15,6 +13,8 @@ public class TableController extends BaseController {
 	
 	@RequestMapping(value = "/table", method = RequestMethod.GET )
 	public ModelAndView home(Locale locale, Model model) {
+		
+		log.info("Welcome /table" );
 		
 		ModelAndView mav = new ModelAndView();
 		

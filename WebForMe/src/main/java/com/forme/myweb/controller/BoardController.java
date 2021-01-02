@@ -11,10 +11,14 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class BoardController extends BaseController {
 	
-	@RequestMapping(value = "/board", method = RequestMethod.GET )
+	@RequestMapping(value = "/board/list", method = RequestMethod.GET )
 	public ModelAndView home(Locale locale, Model model) {
 		
+		log.info("Welcome /board/list" );
+		
 		ModelAndView mav = new ModelAndView();
+		
+		
 		
 		mav.setViewName("/board/boardList");
 		

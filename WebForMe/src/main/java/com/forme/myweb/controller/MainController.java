@@ -1,11 +1,13 @@
 package com.forme.myweb.controller;
 
-import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Locale;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -13,22 +15,21 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class MainController extends BaseController {
 	
-	@RequestMapping(value = "/", method = RequestMethod.GET )
-	public ModelAndView home(Locale locale, Model model) {
+	@RequestMapping( value = "/", method = RequestMethod.GET )
+	public ModelAndView index( HttpServletRequest request, HttpServletResponse response, HttpSession session ) {
 		
-		log.info("Welcome home! The client locale is {}.", locale );
+		log.info("Welcome /" );
 		
 		ModelAndView mav = new ModelAndView();
 		
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		Date now = new Date();
+		SimpleDateFormat sdFormat = new SimpleDateFormat("yyyy-MM-dd (E) HH:mm:ss");
 		
-		String formattedDate = dateFormat.format(date);
-		
-		mav.addObject("serverTime", formattedDate );
-		mav.setViewName("/index");
+		mav.addObject("serverTime", sdFormat.format(now) );
+		mav.setViewName("/main");
 		
 		return mav;
 	}
 	
 }
+

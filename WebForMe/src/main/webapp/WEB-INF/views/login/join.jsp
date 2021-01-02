@@ -29,12 +29,22 @@
 	<link rel="stylesheet" type="text/css" href="/resources/login/css/util.css">
 	<link rel="stylesheet" type="text/css" href="/resources/login/css/main.css">
 <!--===============================================================================================-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	
 	<script>
-	function login(){
-		document.loginForm.submit();
+	function join(){
+		
+		var params = $("#joinForm").serializeArray();
+		
+		sendJsonRequest( "/insertUser.ajax", params, function( data ){
+			if( data.result ){
+				alert('가입이 완료되었습니다');
+				location.href = ctx + '/login';
+			}
+		});
+		
 	}
 	</script>
 	
@@ -47,42 +57,28 @@
 					</span>
 				</div>
 
-				<form name="loginForm" method="POST" class="login100-form validate-form" action="/loginProcess">
-				
+				<form id="joinForm" name="joinForm" class="login100-form validate-form">
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
 						<span class="label-input100">Email</span>
-						<input class="input100" type="text" name="userEmail" placeholder="Enter username">
+						<input class="input100" type="text" name="userEmail" placeholder="Enter Email">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
 						<span class="label-input100">Password</span>
-						<input class="input100" type="password" name="userPw" placeholder="Enter password">
+						<input class="input100" type="password" name="userPw" placeholder="Enter Password">
+						<span class="focus-input100"></span>
+					</div>
+					
+					<div class="wrap-input100 validate-input m-b-18" data-validate = "Nickname is required">
+						<span class="label-input100">Nickname</span>
+						<input class="input100" type="text" name="userNm" placeholder="Enter Nickname">
 						<span class="focus-input100"></span>
 					</div>
 
-					<div class="flex-sb-m w-full p-b-30">
-						<div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
-								Remember me
-							</label>
-						</div>
-						<div>
-							<a href="${ctx}/user/join" class="txt1">
-								회원가입
-							</a>
-						</div>
-						<div>
-							<a href="#" class="txt1">
-								아이디|비밀번호찾기
-							</a>
-						</div>
-					</div>
-
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" onClick="login();">
-							Login
+						<button type="button" class="login100-form-btn" onClick="join();">
+							회원가입
 						</button>
 					</div>
 				</form>

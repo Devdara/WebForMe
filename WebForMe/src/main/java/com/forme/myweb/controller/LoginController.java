@@ -1,7 +1,5 @@
 package com.forme.myweb.controller;
 
-import java.text.DateFormat;
-import java.util.Date;
 import java.util.Locale;
 
 import org.springframework.stereotype.Controller;
@@ -16,15 +14,35 @@ public class LoginController extends BaseController {
 	@RequestMapping(value = "/login", method = RequestMethod.GET )
 	public ModelAndView home(Locale locale, Model model) {
 		
+		log.info("Welcome /login" );
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/login/login");
+		
+		return mav;
+	}
+	
+	@RequestMapping(value = "/loginProcess", method = RequestMethod.POST )
+	public ModelAndView loginProcess(Locale locale, Model model) {
+		
+		log.info("Welcome /loginProcess" );
+		
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("/main");
+		
+		return mav;
+	}
+	
+	@RequestMapping(value = "/join", method = RequestMethod.GET )
+	public ModelAndView join(Locale locale, Model model) {
+		
+		log.info("Welcome /join" );
+		
 		ModelAndView mav = new ModelAndView();
 		
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 		
-		String formattedDate = dateFormat.format(date);
 		
-		mav.addObject("serverTime", formattedDate );
-		mav.setViewName("/login/login");
+		mav.setViewName("/login/join");
 		
 		return mav;
 	}

@@ -159,6 +159,13 @@
 			<version>0.2.7</version>
 		</dependency>
 		
+		<!-- 스프링 리로드 -->
+		<dependency>
+	        <groupId>org.springframework</groupId>
+	        <artifactId>springloaded</artifactId>
+	        <version>1.2.8.RELEASE</version>
+	     </dependency>
+		
 	</dependencies>
     <build>
         <plugins>

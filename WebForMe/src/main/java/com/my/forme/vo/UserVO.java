@@ -4,6 +4,7 @@ import java.util.Date;
 
 import javax.validation.constraints.NotNull;
 
+// 회원VO
 public class UserVO{
 
 	private Integer uIdx;         // 사용자 인덱스

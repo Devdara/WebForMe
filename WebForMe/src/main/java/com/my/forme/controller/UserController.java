@@ -3,6 +3,7 @@ package com.my.forme.controller;
 import java.util.HashMap;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -52,7 +53,7 @@ public class UserController extends BaseController {
 	// 회원가입처리
 	@RequestMapping(value = "/insertUser.ajax", method = RequestMethod.POST )
 	@ResponseBody
-	public HashMap<String, Object> insertUser( HttpServletRequest request, UserVO userVO ){
+	public HashMap<String, Object> insertUser( HttpServletRequest request, @Valid UserVO userVO ){
 		
 		log.info("Welcome /user/insertUser.ajax" );
 		

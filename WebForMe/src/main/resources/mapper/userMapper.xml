@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.forme.myweb.mapper.UserMapper">
+<mapper namespace="com.my.forme.mapper.UserMapper">
 
-	<resultMap id="BaseResultMap" type="com.forme.myweb.vo.UserVO">
+	<resultMap id="BaseResultMap" type="com.my.forme.vo.UserVO">
 	   <id column="U_IDX" jdbcType="INTEGER" property="uIdx" />
 	   <result column="USER_EMAIL" jdbcType="INTEGER" property="userEmail" />
 	   <result column="USER_PW" jdbcType="INTEGER" property="userPw" />
@@ -12,7 +12,7 @@
 	   <result column="USE_YN" jdbcType="VARCHAR" property="useYn" />
 	 </resultMap>
 
-    <insert id="insertMember" parameterType="com.forme.myweb.vo.UserVO">
+    <insert id="insertMember" parameterType="com.my.forme.vo.UserVO">
         INSERT INTO USER(user_email, user_pw, user_nm, use_yn)
         VALUES ( #{userEmail}, #{userPw}, #{userNm}, #{useYn} )
     </insert>

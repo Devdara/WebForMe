@@ -1,4 +1,4 @@
-package com.forme.myweb.controller;
+package com.my.forme.controller;
 
 import java.util.HashMap;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.forme.myweb.service.UserService;
-import com.forme.myweb.vo.UserVO;
+import com.my.forme.service.UserService;
+import com.my.forme.vo.UserVO;
 
 @Controller
 public class UserController extends BaseController {

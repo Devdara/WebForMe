@@ -1,9 +1,9 @@
-package com.forme.myweb.service;
+package com.my.forme.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.forme.myweb.mapper.BoardMapper;
+import com.my.forme.mapper.BoardMapper;
 
 @Service
 public class BoardService {

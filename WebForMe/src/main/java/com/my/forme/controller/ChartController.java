@@ -1,4 +1,4 @@
-package com.forme.myweb.controller;
+package com.my.forme.controller;
 
 import java.util.Locale;
 
@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class TableController extends BaseController {
+public class ChartController extends BaseController {
 	
-	@RequestMapping(value = "/table", method = RequestMethod.GET )
+	@RequestMapping(value = "/chart", method = RequestMethod.GET )
 	public ModelAndView home(Locale locale, Model model) {
 		
-		log.info("Welcome /table" );
+		log.info("Welcome /chart" );
 		
 		ModelAndView mav = new ModelAndView();
 		
-		mav.setViewName("/table/tables");
+		mav.setViewName("/chart/charts");
 		
 		return mav;
 	}

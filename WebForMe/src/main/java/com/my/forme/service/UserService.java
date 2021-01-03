@@ -1,4 +1,4 @@
-package com.forme.myweb.service;
+package com.my.forme.service;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.forme.myweb.mapper.UserMapper;
-import com.forme.myweb.vo.UserVO;
+import com.my.forme.mapper.UserMapper;
+import com.my.forme.vo.UserVO;
 
 @Service
 @Transactional

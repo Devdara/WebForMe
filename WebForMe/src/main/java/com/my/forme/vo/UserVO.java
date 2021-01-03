@@ -1,4 +1,4 @@
-package com.forme.myweb.vo;
+package com.my.forme.vo;
 
 import java.util.Date;
 

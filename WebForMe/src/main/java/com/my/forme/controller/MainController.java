@@ -1,4 +1,4 @@
-package com.forme.myweb.controller;
+package com.my.forme.controller;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

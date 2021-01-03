@@ -1,8 +1,8 @@
-package com.forme.myweb.mapper;
+package com.my.forme.mapper;
 
 import java.util.List;
 
-import com.forme.myweb.vo.UserVO;
+import com.my.forme.vo.UserVO;
 
 
 public interface UserMapper {

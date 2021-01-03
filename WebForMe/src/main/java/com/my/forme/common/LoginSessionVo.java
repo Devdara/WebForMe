@@ -1,4 +1,4 @@
-package com.forme.myweb.common;
+package com.my.forme.common;
 
 public class LoginSessionVo {
 	

@@ -1,6 +1,6 @@
-package com.forme.myweb.mapper;
+package com.my.forme.mapper;
 
-import com.forme.myweb.vo.UserVO;
+import com.my.forme.vo.UserVO;
 
 public interface BoardMapper {
 

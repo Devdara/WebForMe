@@ -48,7 +48,7 @@
  	
  	<!-- MapperScan -->
  	<bean class = "org.mybatis.spring.mapper.MapperScannerConfigurer" >
- 		<property name = "basePackage" value = "com.forme.myweb.mapper" />
+ 		<property name = "basePackage" value = "com.my.forme.mapper" />
  	</bean> 
 		
 </beans>

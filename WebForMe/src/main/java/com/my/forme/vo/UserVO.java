@@ -7,14 +7,14 @@ import javax.validation.constraints.NotNull;
 public class UserVO{
 
 	private Integer uIdx;         // 사용자 인덱스
-	@NotNull
+    @NotNull
 	private String userEmail;    // 사용자 이메일
-	@NotNull
+    @NotNull
 	private String userPw;       // 사용자 비밀번호
-	@NotNull
+    @NotNull
 	private String userNm;       // 사용자 이름
 	private Date cdate;         // 가입일
-	@NotNull
+    @NotNull
 	private String useYn;         // 사용자 사용여부
 	
 	public Integer getuIdx() {

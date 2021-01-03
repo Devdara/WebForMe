@@ -21,7 +21,7 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.forme.myweb" />
+	<context:component-scan base-package="com.my.forme" />
 	
 	 <resources mapping="/resources/**" location="/resources/" />
 	 <resources mapping="/favicon.ico" location="/favicon.ico" />

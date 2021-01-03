@@ -158,24 +158,24 @@
             <version>${org.springframework-version}</version>
         </dependency>
 
-		<!-- 스프링 @Valid를 위한 라이브러리 -->		
-		<dependency>
-		    <groupId>javax.validation</groupId>
-		    <artifactId>validation-api</artifactId>
-		    <version>2.0.1.Final</version>
-		</dependency>
-		<dependency>
-		    <groupId>org.hibernate.validator</groupId>
-		    <artifactId>hibernate-validator</artifactId>
-		    <version>7.0.0.Final</version>
-		</dependency>
-		<!-- 스프링 @Valid를 위한 라이브러리 추가후
-		       Add a provider like Hibernate Validator (RI) to your classpath 에러 발생시 해결-->
-		<dependency>
-		  <groupId>org.hibernate</groupId>
-		  <artifactId>hibernate-validator-annotation-processor</artifactId>
-		  <version>4.1.0.Final</version>
-		</dependency>
+		        <!-- 스프링 @Valid를 위한 라이브러리 -->        
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>2.0.1.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>7.0.0.Final</version>
+        </dependency>
+        <!-- 스프링 @Valid를 위한 라이브러리 추가후
+               Add a provider like Hibernate Validator (RI) to your classpath 에러 발생시 해결-->
+        <dependency>
+          <groupId>org.hibernate</groupId>
+          <artifactId>hibernate-validator-annotation-processor</artifactId>
+          <version>4.1.0.Final</version>
+        </dependency>
 		<!--  java.lang.ClassNotFoundException: javax.xml.bind.JAXBException 해결 -->
 		<dependency>
 	        <groupId>javax.xml.bind</groupId>

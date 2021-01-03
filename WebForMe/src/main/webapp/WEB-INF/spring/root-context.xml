@@ -18,9 +18,15 @@
 	<!-- jdbc모듈을 이용하여 dataSource추가하기. -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <!-- 운영 DB정보 -->
         <property name="url" value="jdbc:mysql://58.79.19.99:20460/forme?useSSL=false"></property>
         <property name="username" value="root"></property>   
         <property name="password" value=""></property>
+        <!-- local DB정보 
+        <property name="url" value="jdbc:mysql://127.0.0.1:3306/forme?useSSL=false"></property>
+        <property name="username" value="root"></property>   
+        <property name="password" value="root00"></property>
+         -->
     </bean>
 		
 	<!--  mybatis와 스프링 연동작을 하기위한 SqlsessionFactory == DB연결 및 SQL의 실행을 대한객체 -->

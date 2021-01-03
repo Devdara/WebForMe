@@ -171,18 +171,18 @@
         </dependency>
         <!-- 스프링 @Valid를 위한 라이브러리 추가후
                Add a provider like Hibernate Validator (RI) to your classpath 에러 발생시 해결-->
-        <dependency>
-          <groupId>org.hibernate</groupId>
-          <artifactId>hibernate-validator-annotation-processor</artifactId>
-          <version>4.1.0.Final</version>
-        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-validator</artifactId>
+		    <version>5.2.4.Final</version>
+		</dependency>
 		<!--  java.lang.ClassNotFoundException: javax.xml.bind.JAXBException 해결 -->
 		<dependency>
 	        <groupId>javax.xml.bind</groupId>
 	        <artifactId>jaxb-api</artifactId>
 	        <version>2.3.0</version>
 	    </dependency>
-		
 		<!-- ajax응답시 406에러(json형태로 응답)를 해결하기위한 라이브러리 -->
 		<dependency>
 		    <groupId>org.codehaus.jackson</groupId>
